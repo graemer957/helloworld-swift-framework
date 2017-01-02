@@ -78,3 +78,4 @@ rm -rf "${PROJECT_DIR}/build"
 # TODO
 - Gather .dSYMs from builds
 - Make use of `strip_frameworks.sh` from Realm to fix consumer issue when archiving
+- Clean up empty `.xcarchive`'s
