@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA67201A1E1ABA39003F69AE /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6720191E1ABA39003F69AE /* HelloWorld.swift */; };
 		AAB523AD1E1AB7EA008BE298 /* HelloWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB523AB1E1AB7EA008BE298 /* HelloWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA6720191E1ABA39003F69AE /* HelloWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 		AAB523A81E1AB7EA008BE298 /* HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB523AB1E1AB7EA008BE298 /* HelloWorld.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
 		AAB523AC1E1AB7EA008BE298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				AAB523AB1E1AB7EA008BE298 /* HelloWorld.h */,
+				AA6720191E1ABA39003F69AE /* HelloWorld.swift */,
 				AAB523AC1E1AB7EA008BE298 /* Info.plist */,
 			);
 			path = HelloWorld;
@@ -96,6 +99,7 @@
 					AAB523A71E1AB7E9008BE298 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7T45WAJ3NZ;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA67201A1E1ABA39003F69AE /* HelloWorld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +245,7 @@
 		AAB523B11E1AB7EA008BE298 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7T45WAJ3NZ;
@@ -252,6 +258,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.sigma957.HelloWorld;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +266,7 @@
 		AAB523B21E1AB7EA008BE298 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7T45WAJ3NZ;
@@ -294,6 +302,7 @@
 				AAB523B21E1AB7EA008BE298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
