@@ -1,4 +1,9 @@
 # HelloWorld Swift Framework
+[![Build Status](https://img.shields.io/travis/graemer957/helloworld-swift-framework/master.svg?style=flat-square)](https://travis-ci.org/graemer957/helloworld-swift-framework)
+[![Language](https://img.shields.io/badge/language-Swift%203.0-orange.svg?style=flat-square)](https://developer.apple.com/swift/)
+[![Platforms](https://img.shields.io/badge/platform-ios-yellow.svg?style=flat-square)](http://www.apple.com/ios/)
+[![License](https://img.shields.io/badge/license-Apache--2.0-lightgrey.svg?style=flat-square)](https://github.com/graemer957/helloworld-swift-framework/blob/master/LICENSE)
+
 Document the process for creating a Swift Frameworks for iOS.  This repo provides an example framework in the form of the utterly useless `HelloWorld.framework`.
 
 # Build environment
