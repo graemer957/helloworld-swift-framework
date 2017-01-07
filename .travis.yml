@@ -18,5 +18,5 @@ script:
       sleep 5;
       set -o pipefail;
       xcodebuild -project HelloWorld.xcodeproj -scheme HelloWorld -destination "platform=iOS Simulator,OS=10.2,name=iPhone 7 Plus" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty;
-	  xcodebuild -project HelloWorld.xcodeproj -scheme Framework -destination "platform=iOS Simulator,OS=10.2,name=iPhone 7 Plus" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty;
+      xcodebuild -project HelloWorld.xcodeproj -scheme Framework -destination "platform=iOS Simulator,OS=10.2,name=iPhone 7 Plus" -configuration Release ONLY_ACTIVE_ARCH=NO build | xcpretty;
     fi
