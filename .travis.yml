@@ -18,5 +18,5 @@ script:
       set -o pipefail;
       xcodebuild -project HelloWorld.xcodeproj -scheme HelloWorld -destination "platform=iOS Simulator,OS=10.2,name=iPad Air" -configuration Debug ONLY_ACTIVE_ARCH=NO clean build | xcpretty;
       xcodebuild -project HelloWorld.xcodeproj -scheme Framework -destination "platform=iOS Simulator,OS=10.2,name=iPad Air" -configuration Release ONLY_ACTIVE_ARCH=NO clean build | xcpretty;
-	  xcodebuild -project HelloWorld.xcodeproj -scheme Demo -destination "platform=iOS Simulator,OS=10.2,name=iPad Air" -configuration Release ONLY_ACTIVE_ARCH=NO clean build | xcpretty;
+      xcodebuild -project HelloWorld.xcodeproj -scheme Demo -destination "platform=iOS Simulator,OS=10.2,name=iPad Air" -configuration Release ONLY_ACTIVE_ARCH=NO clean build | xcpretty;
     fi
