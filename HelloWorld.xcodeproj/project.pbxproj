@@ -91,13 +91,21 @@
 			isa = PBXGroup;
 			children = (
 				AA2476EB1E749A37009BD4D4 /* AppDelegate.swift */,
-				AA2476ED1E749A37009BD4D4 /* ViewController.swift */,
 				AA2476EF1E749A37009BD4D4 /* Main.storyboard */,
-				AA2476F21E749A37009BD4D4 /* Assets.xcassets */,
-				AA2476F41E749A37009BD4D4 /* LaunchScreen.storyboard */,
-				AA2476F71E749A37009BD4D4 /* Info.plist */,
+				AA2477651E74B874009BD4D4 /* Supporting Files */,
+				AA2476ED1E749A37009BD4D4 /* ViewController.swift */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		AA2477651E74B874009BD4D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA2476F21E749A37009BD4D4 /* Assets.xcassets */,
+				AA2476F71E749A37009BD4D4 /* Info.plist */,
+				AA2476F41E749A37009BD4D4 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		AAB5239E1E1AB7E9008BE298 = {
@@ -495,6 +503,7 @@
 				AA2476FA1E749A37009BD4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA6720461E1AE4D7003F69AE /* Build configuration list for PBXAggregateTarget "Framework" */ = {
 			isa = XCConfigurationList;
