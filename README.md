@@ -15,18 +15,18 @@ Document the process for creating a Swift Frameworks for iOS.  This repo provide
 - None
 
 # Steps
-1. Create new iOS Xcode project of type `Cocoa Touch Framework`. In this case I used the name `HelloWorld`.
-2. Add required functionality to the framework. For demo purposes I've added a public function `HelloWorld.sayIt()`
-3. Add aggregate build target called `Framework` (found under `Cross-platform`)
-4. Add a new 'New Run Script Phase' to this target
-5. Rename the `Run Script` to `Build Framework` and copy the following script:
+- Create new iOS Xcode project of type `Cocoa Touch Framework`. In this case I used the name `HelloWorld`.
+- Add required functionality to the framework. For demo purposes I've added a public function `HelloWorld.sayIt()`
+- Add aggregate build target called `Framework` (found under `Cross-platform`)
+- Add a new 'New Run Script Phase' to this target
+- Rename the `Run Script` to `Build Framework` and copy the following script:
 ```bash
 "${PROJECT_DIR}/scripts/build-framework.sh"
 ```
-6. Remove the header file created from the Xcode template, in this case `HelloWorld.h`
-7. Disable `Apple Generic` versioning system, by navigating at project level into `Build Settings`, then deleting the `Current Project Version`, `Versioning Name Prefix` and `Versioning System` settings
-8. Add new target of type `Single View Application` called `Demo`, that will consume the framework and can be used for deveopment and demo purposes
-9. Add the framework as a dependancy of the Demo target by navigating to `General > Embedded Binaries` and tapping +
+- Remove the header file created from the Xcode template, in this case `HelloWorld.h`
+- Disable `Apple Generic` versioning system, by navigating at project level into `Build Settings`, then deleting the `Current Project Version`, `Versioning Name Prefix` and `Versioning System` settings
+- Add new target of type `Single View Application` called `Demo`, that will consume the framework and can be used for development and demo purposes
+- Add the `HelloWorld.framework` as a dependancy of the Demo target by navigating to `General > Embedded Binaries` and tapping +
 
 # Resources
 - Original script for building framework (http://stackoverflow.com/a/35766033)
