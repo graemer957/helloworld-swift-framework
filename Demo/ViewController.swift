@@ -7,8 +7,15 @@
 //
 
 import UIKit
+import HelloWorld
 
 
 class ViewController: UIViewController {
+    
+    // MARK: - IBActions
+    @IBAction
+    private func goOnDoIt() {
+        HelloWorld.sayIt()
+    }
     
 }
