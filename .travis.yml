@@ -2,3 +2,9 @@ osx_image: xcode8.2
 language: objective-c
 xcode_project: HelloWorld.xcodeproj
 xcode_scheme: HelloWorld
+
+before_install:
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then
+      brew update;
+      brew outdated xctool || brew upgrade xctool;
+    fi
