@@ -22,13 +22,11 @@
 
 /* Begin PBXBuildFile section */
 		AA67201A1E1ABA39003F69AE /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6720191E1ABA39003F69AE /* HelloWorld.swift */; };
-		AAB523AD1E1AB7EA008BE298 /* HelloWorld.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB523AB1E1AB7EA008BE298 /* HelloWorld.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AA6720191E1ABA39003F69AE /* HelloWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 		AAB523A81E1AB7EA008BE298 /* HelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAB523AB1E1AB7EA008BE298 /* HelloWorld.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
 		AAB523AC1E1AB7EA008BE298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +60,6 @@
 		AAB523AA1E1AB7EA008BE298 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
-				AAB523AB1E1AB7EA008BE298 /* HelloWorld.h */,
 				AA6720191E1ABA39003F69AE /* HelloWorld.swift */,
 				AAB523AC1E1AB7EA008BE298 /* Info.plist */,
 			);
@@ -76,7 +73,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB523AD1E1AB7EA008BE298 /* HelloWorld.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
