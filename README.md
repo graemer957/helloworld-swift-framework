@@ -9,7 +9,7 @@ Document the process for creating a Swift Frameworks for iOS.  This repo provide
 # Build environment
 - Xcode 8.2.1
 - Swift 3.0.2
-- macOS 10.12.2
+- macOS 10.12.3
 
 # Dependancies
 - None
@@ -18,7 +18,7 @@ Document the process for creating a Swift Frameworks for iOS.  This repo provide
 - Create new iOS Xcode project of type `Cocoa Touch Framework`. In this case I used the name `HelloWorld`.
 - Add required functionality to the framework. For demo purposes I've added a public function `HelloWorld.sayIt()`
 - Add aggregate build target called `Framework` (found under `Cross-platform`)
-- Add a new 'New Run Script Phase' to this target
+- Add a new `New Run Script Phase` to this target
 - Rename the `Run Script` to `Build Framework` and copy the following script:
 ```bash
 "${PROJECT_DIR}/scripts/build-framework.sh"
@@ -27,6 +27,10 @@ Document the process for creating a Swift Frameworks for iOS.  This repo provide
 - Disable `Apple Generic` versioning system, by navigating at project level into `Build Settings`, then deleting the `Current Project Version`, `Versioning Name Prefix` and `Versioning System` settings
 - Add new target of type `Single View Application` called `Demo`, that will consume the framework and can be used for development and demo purposes
 - Add the `HelloWorld.framework` as a dependancy of the Demo target by navigating to `General > Embedded Binaries` and tapping +
+
+# Usage
+- To compile `HelloWorld.framework` suitable for distribution, build the `Framework` target. The selected device is ignored. You will find your built framework in the `release` directory.
+- During development choose the `Demo` target and run it against your target device. This will build the framework for the selected platform and architecture only.
 
 # Resources
 - Original script for building framework (http://stackoverflow.com/a/35766033)
