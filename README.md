@@ -26,7 +26,7 @@ Document the process for creating a Swift Frameworks for iOS.  This repo provide
 - Remove the header file created from the Xcode template, in this case `HelloWorld.h`
 - Disable `Apple Generic` versioning system, by navigating at project level into `Build Settings`, then deleting the `Current Project Version`, `Versioning Name Prefix` and `Versioning System` settings
 - Add new target of type `Single View Application` called `Demo`, that will consume the framework and can be used for development and demo purposes
-- Add the `HelloWorld.framework` as a dependancy of the Demo target by navigating to `General > Embedded Binaries` and tapping +
+- Add the `HelloWorld.framework` as a dependancy of the Demo target by navigating to `General > Embedded Binaries` and tapping `+`
 
 # Usage
 - To compile `HelloWorld.framework` suitable for distribution, build the `Framework` target. The selected device is ignored. You will find your built framework in the `release` directory.
